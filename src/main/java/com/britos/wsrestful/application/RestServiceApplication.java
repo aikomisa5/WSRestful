@@ -1,4 +1,4 @@
-package com.restService.restService;
+package com.britos.wsrestful.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
