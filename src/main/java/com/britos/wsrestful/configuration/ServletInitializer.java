@@ -1,6 +1,6 @@
 package com.britos.wsrestful.configuration;
 
-import com.britos.wsrestful.application.RestServiceApplication;
+import com.britos.wsrestful.Application;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
@@ -8,7 +8,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(RestServiceApplication.class);
-	}
+        return application.sources(Application.class);
+    }
 
 }

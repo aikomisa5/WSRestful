@@ -1,6 +1,6 @@
 package com.britos.wsrestful.exceptions.handler;
 
-import com.britos.wsrestful.exceptions.EmpleadoNotFoundException;
+import com.britos.wsrestful.exceptions.EmployeeNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class HandlerException{
 
         @ResponseBody
-        @ExceptionHandler(EmpleadoNotFoundException.class)
+        @ExceptionHandler(EmployeeNotFoundException.class)
         @ResponseStatus(HttpStatus.NOT_FOUND)
-        String empleadoNotFoundHandler(EmpleadoNotFoundException ex) {
+        String empleadoNotFoundHandler(EmployeeNotFoundException ex) {
             return ex.getMessage();
         }
 }
