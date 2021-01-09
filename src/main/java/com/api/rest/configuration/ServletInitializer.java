@@ -1,8 +1,9 @@
-package com.britos.wsrestful.configuration;
+package com.api.rest.configuration;
 
-import com.britos.wsrestful.Application;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+import com.api.rest.Application;
 
 public class ServletInitializer extends SpringBootServletInitializer {
 
